@@ -1,54 +1,43 @@
-title: kaLki Blog - Info Sec, CTF & Hacking
-author: kaLki
-email: kalkibusinesofficial@gmail.com
-description: > # this means to ignore newlines until "show_exerpts:"
+# Site settings
+title: kaLki Blog - Info Sec, CTF & Hacking # Tumhara title
+author: kaLki # Tumhara naam
+email: kalkibusinesofficial@gmail.com # Tumhara email
+description: > # Tumhara description
   Info Sec, CTF & Hacking
-show_excerpts: true # set to true to show excerpts on the homepage
+show_excerpts: true # Homepage pe post ka excerpt dikhega
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+# Sass settings (css ke liye)
 sass:
-  sass_dir: _sass
-remote_theme: jekyll/plainwhite-theme
-  name: kaLki
-  tagline: bug hunter
-  date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
+  sass_dir: _sass # Yeh theek hai
 
-  # generate social links in footer
-  social_links:
-    twitter: kalki_x0
-    github:  kalki_x0
-    linkedIn: kalki-x0
-    rss: /feed.xml
-    # dribbble: jekyll
-    # facebook: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    # linkedin: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
+# Remote Theme settings
+remote_theme: jekyll/plainwhite-theme # Yeh line top level par rahegi
 
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+# Plainwhite theme specific settings
+plainwhite: # <--- Yeh line bilkul left side se shuru hogi (koi indentation nahi)
+  name: kaLki # <--- Yeh line plainwhite: se theek 2 space aage se shuru hogi
+  tagline: bug hunter # <--- Yeh bhi plainwhite: se 2 space aage
+  date_format: "%b %-d, %Y" # <--- Yeh bhi plainwhite: se 2 space aage
+  sitemap: true # <--- Yeh bhi plainwhite: se 2 space aage
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-#about.md
+  # Social links
+  social_links: # <--- Yeh line plainwhite: se 2 space aage
+    twitter: kalki_x0 # <--- Yeh line social_links: se 2 space aage (total 4 space shuru se)
+    github: kalki_x0 # <--- Yeh bhi social_links: se 2 space aage (total 4 space shuru se)
+    linkedIn: /in/kalki-x0 # <--- LinkedIn ke liye poora path lagta hai /in/ ke saath. Check kar lena tumhara kya path hai.
+    rss: /feed.xml # <--- Yeh bhi social_links: se 2 space aage (total 4 space shuru se)
+    # Agar koi aur link lagana hai (jaise instagram:), toh uske aage se # hata dena aur same indentation (4 space shuru se) maintain karna.
+
+# Header pages (optional)
+# Agar koi page header mein link karna hai, toh neeche # hata kar add karo, jaise:
+# header_pages:
+#   - about.md
 
 # Build settings
-theme: plainwhite
+# Jab remote_theme use karte hain, toh yeh 'theme: plainwhite' wali line nahi chahiye. Isse hata dena.
+# theme: plainwhite # <--- IS LINE KO HATA DO
 
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-remote-theme # Yeh plugin add kar lo, confirm ho jayega ki remote theme support enabled hai
