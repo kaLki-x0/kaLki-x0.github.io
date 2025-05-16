@@ -8,8 +8,7 @@ remote_theme: samarsault/plainwhite-jekyll
 plainwhite:
   name: kaLki
   tagline: |
-    Hacker. Learner.
-    Cybersecurity Explorer.
+    bug hunter
   portfolio_image: "assets/portfolio.png"
   dark_mode: true
   search: true
