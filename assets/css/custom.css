@@ -1,1 +1,20 @@
+/* Make font hacker-like and dark */
+body {
+  font-family: monospace;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+a {
+  color: #58a6ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 4px;
+}
 
