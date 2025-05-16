@@ -2,42 +2,49 @@
 title: kaLki Blog - Info Sec, CTF & Hacking # Tumhara title
 author: kaLki # Tumhara naam
 email: kalkibusinesofficial@gmail.com # Tumhara email
-description: > # Tumhara description
+description: > # Tumhara description (Yeh ">" ke baad ek space dekar neeche likhte hain)
   Info Sec, CTF & Hacking
-show_excerpts: true # Homepage pe post ka excerpt dikhega
+show_excerpts: true # Homepage pe post ka excerpt dikhega (true ya false)
 
-# Sass settings (css ke liye)
+# Sass settings (CSS ke liye)
 sass:
-  sass_dir: _sass # Yeh theek hai
+  sass_dir: _sass # Default setting, usually theek hai
 
 # Remote Theme settings
-remote_theme: jekyll/plainwhite-theme # Yeh line top level par rahegi
+# Yeh batata hai ki theme GitHub par kis repository se lena hai
+remote_theme: samarsault/plainwhite-jekyll
 
 # Plainwhite theme specific settings
-plainwhite: # <--- Yeh line bilkul left side se shuru hogi (koi indentation nahi)
-  name: kaLki # <--- Yeh line plainwhite: se theek 2 space aage se shuru hogi
-  tagline: bug hunter # <--- Yeh bhi plainwhite: se 2 space aage
-  date_format: "%b %-d, %Y" # <--- Yeh bhi plainwhite: se 2 space aage
-  sitemap: true # <--- Yeh bhi plainwhite: se 2 space aage
+# Yeh block Plainwhite theme ki apni settings ke liye hai
+plainwhite:
+  name: kaLki # <-- Yeh naam sidebar mein avatar ke neeche dikhta hai
+  tagline: bug hunter # <-- Yeh chota sa title ya tagline naam ke neeche
+  date_format: "%b %-d, %Y" # <-- Blog post dates ka format
+  sitemap: true # <-- Sitemap generate karega (true ya false)
 
   # Social links
-  social_links: # <--- Yeh line plainwhite: se 2 space aage
-    twitter: kalki_x0 # <--- Yeh line social_links: se 2 space aage (total 4 space shuru se)
-    github: kalki_x0 # <--- Yeh bhi social_links: se 2 space aage (total 4 space shuru se)
-    linkedIn: /in/kalki-x0 # <--- LinkedIn ke liye poora path lagta hai /in/ ke saath. Check kar lena tumhara kya path hai.
-    rss: /feed.xml # <--- Yeh bhi social_links: se 2 space aage (total 4 space shuru se)
-    # Agar koi aur link lagana hai (jaise instagram:), toh uske aage se # hata dena aur same indentation (4 space shuru se) maintain karna.
+  # Yahan apne social media profiles ke username/path daalo
+  social_links:
+    twitter: kalki_x0 # <-- Twitter username
+    github:  kalki_x0 # <-- GitHub username
+    linkedIn: /in/kalki-x0 # <-- LinkedIn public profile path (/in/ wala part)
+    rss: /feed.xml # <-- RSS feed link (blog ke liye)
+    # Agar koi aur link lagana hai (jaise instagram, facebook, youtube), toh uske aage se # hata dena aur apna username/ID likh dena. Indentation (shuru se 4 space) maintain karna.
+    # instagram: your_instagram_username
+    # facebook: your_facebook_username
 
 # Header pages (optional)
-# Agar koi page header mein link karna hai, toh neeche # hata kar add karo, jaise:
+# Agar koi specific page header mein link karna hai (jaise About, Projects), toh neeche uncomment karke un files ka path add karo.
 # header_pages:
 #   - about.md
+#   - projects.md
 
 # Build settings
-# Jab remote_theme use karte hain, toh yeh 'theme: plainwhite' wali line nahi chahiye. Isse hata dena.
-# theme: plainwhite # <--- IS LINE KO HATA DO
+# Jab remote_theme use karte hain, toh yeh 'theme:' wali line nahi chahiye. Isse commented hi rehne do ya hata do.
+# theme: plainwhite
 
+# Plugins needed for GitHub Pages and remote theme
 plugins:
-  - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-remote-theme # Yeh plugin add kar lo, confirm ho jayega ki remote theme support enabled hai
+  - jekyll-seo-tag
+  - jekyll-remote-theme # <--- Remote theme use karne ke liye yeh plugin zaroori hai
