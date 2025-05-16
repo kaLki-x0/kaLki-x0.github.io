@@ -1,1 +1,28 @@
+title: bug hunter
+email:
+description: 
+baseurl: ""
+url: "https://kaLki-xO.github.io" # Change yourusername
+remote_theme: samarsault/plainwhite-jekyll
+
+plainwhite:
+  name: kaLki
+  tagline: |
+    Hacker. Learner.
+    Cybersecurity Explorer.
+  portfolio_image: "assets/portfolio.png"
+  dark_mode: true
+  search: true
+  navigation:
+    - title: Projects
+      url: "/projects"
+    - title: Resume
+      url: "/resume"
+  condensed_mobile:
+    - home
+    - post
+    - page
+  html_lang: "en"
+  sitemap: true
+  show_excerpts: true
 
